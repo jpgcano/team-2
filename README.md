@@ -88,7 +88,7 @@ Al finalizar el ejercicio, cada miembro debe agregar su nombre aquí:
 1. [Nombre Miembro 1] - Estructura Base
 2. [Nombre Miembro 2] - Header y Navegación
 3. [Nombre Miembro 3] - Contenido Principal
-4. [Juan pablo cano gallo] - Footer y Estilos
+4. Juan pablo cano gallo - Footer y Estilos
 
 ---
 
