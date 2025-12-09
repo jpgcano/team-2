@@ -1,0 +1,126 @@
+/* ===========================
+   FONDO GENERAL DE LA PÁGINA
+   =========================== */
+body {
+    margin: 0; /* elimina bordes por defecto de la página */
+    padding: 0; /* elimina el padding por defecto */
+    font-family: Arial, sans-serif; /* tipo de letra para todo el sitio */
+    background: linear-gradient(to bottom, #5b1b5d, #8cc7d6); /* degradado de arriba hacia abajo */
+}
+
+/* ====================================
+   HEADER: LOGO + MENÚ DE NAVEGACIÓN
+   ==================================== */
+.header {
+    width: 100%; /* ocupa todo el ancho */
+    padding: 10px 20px; /* espacio interno arriba/abajo y a los lados */
+    display: flex; /* organiza elementos en fila */
+    justify-content: space-between; /* separa logo a la izquierda y menú a la derecha */
+    align-items: center; /* centra verticalmente los elementos */
+}
+
+/* Círculo que simula el logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    background: lightgray; /* color del círculo */
+    border-radius: 50%; /* lo hace redondo */
+}
+
+/* Enlaces del menú de navegación */
+.nav a {
+    margin: 0 10px; /* espacio entre los enlaces */
+    color: white; /* texto blanco */
+    text-decoration: none; /* quita el subrayado */
+    font-weight: bold; /* texto más grueso */
+}
+
+/* ===========================
+   BANNER PRINCIPAL
+   =========================== */
+.banner {
+    width: 90%; /* que no ocupe el 100% para dejar margen */
+    margin: 20px auto; /* lo centra horizontalmente */
+}
+
+.banner img {
+    width: 100%; /* imagen ocupa todo el ancho del contenedor */
+    border-radius: 15px; /* bordes redondeados */
+}
+
+/* ===========================
+   TÍTULO DE LA SECCIÓN
+   =========================== */
+.titulo-seccion {
+    text-align: center; /* centrado */
+    color: white; /* color del texto */
+    margin-top: 10px; /* separarlo del banner */
+}
+
+/* ===================================
+   BOTONES DE CATEGORÍA (Gatitos, Perros)
+   =================================== */
+.categorias {
+    display: flex; /* organiza los botones en fila */
+    justify-content: space-around; /* los centra horizontalmente */
+    gap: 30px; /* espacio entre los botones */
+    margin: 25px 0; /* espacio arriba y abajo */
+}
+
+/* Estilo general de botones */
+.btn {
+    background: black; /* fondo negro */
+    color: white; /* texto blanco */
+    padding: 10px 25px; /* espacio interno */
+    border: none; /* sin borde */
+    border-radius: 7px; /* esquinas redondeadas */
+    font-weight: bold; /* texto más grueso */
+    cursor: pointer; /* mano al pasar el mouse */
+}
+
+/* ===========================
+   GALERÍA DE TARJETAS
+   =========================== */
+.galeria {
+    display: grid; /* sistema de cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* dos columnas del mismo tamaño */
+    justify-items: center; /* centra cada tarjeta horizontalmente */
+    gap: 25px; /* espacio entre las tarjetas */
+    width: 90%; /* ancho del contenedor */
+    margin: auto; /* centrado */
+}
+
+/* ===========================
+   TARJETA QUE CONTIENE IMAGEN + BOTÓN
+   =========================== */
+.card {
+    width: 333.9px; /* ancho exacto tomado de Figma */
+    height: 430.15px; /* alto exacto tomado de Figma */
+    border-radius: 54px; /* bordes redondeados grandes */
+    padding: 10px; /* espacio interno alrededor */
+    background: rgba(255,255,255,0.1); /* fondo semi-transparente */
+    overflow: hidden; /* recorta lo que sobresale de la tarjeta */
+    display: flex; /* organiza los elementos en columna */
+    flex-direction: column; /* coloca imagen arriba y botón abajo */
+    justify-content: space-between; /* deja espacio entre imagen y botón */
+    align-items: center; /* centra horizontalmente */
+}
+
+/* Imagen dentro de la tarjeta */
+.card img {
+    width: 100%; /* ocupa todo el ancho disponible */
+    height: 80%; /* deja un 20% para el botón */
+    object-fit: cover; /* recorta la imagen sin deformarla */
+    border-radius: 40px; /* esquinas redondeadas de la imagen */
+}
+
+/* Botón dentro de cada tarjeta */
+.btn-info {
+    background: black; /* fondo negro */
+    color: white; /* texto blanco */
+    padding: 10px 20px; /* espacio interno */
+    border-radius: 12px; /* esquinas redondeadas */
+    border: none; /* sin borde */
+    margin-top: 10px; /* espacio entre imagen y botón */
+    cursor: pointer; /* mano al pasar */
+}
